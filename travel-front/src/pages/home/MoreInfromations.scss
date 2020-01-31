@@ -1,0 +1,145 @@
+#more_info{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.2);
+  left: 0;
+  top: 0;
+  .more_info_content{
+    width: 800px;
+    background: white;
+    overflow: scroll;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    padding: 40px;
+    .title{
+      margin-bottom: 20px;
+    }
+    .title_section{
+      margin-top: 20px;
+    }
+    .suggest_date{
+      margin: 20px 0;
+      margin-bottom: 10px;
+      background: rgba(0,0,0,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      h4{
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .row{
+        display: flex;
+        input{
+          flex: 1 1;
+          font-size: 15px;
+          padding: 5px;
+          margin-bottom: 5px;
+        }
+      }
+      button{
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+        background: cadetblue;
+      }
+    }
+    .sing_up{
+      margin: 20px 0;
+      margin-top: 10px;
+      background: rgba(0,0,0,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      h4{
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .form{
+        margin-top: 10px;
+        select{
+          margin:0 0 10px;
+          width: 100%;
+          padding: 10px;
+        }
+        input{
+          width: 100%;
+          font-size: 15px;
+          padding: 10px;
+          margin-bottom: 5px;
+        }
+        .row{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+
+        }
+        button{
+          width: 100%;
+          height: 30px;
+          font-size: 18px;
+          background: cadetblue;
+        }
+      }
+    }
+    .dates{
+
+      display: flex;
+      flex-wrap: wrap;
+
+      >div{
+        background:#6c757d;
+        border-radius: 100px;
+        padding: 5px 15px;
+        background: rgba(0,0,0,0.2);
+        margin:5px;
+        font-size: 14px;
+        span{
+          margin-left: 10px;
+          font-weight: 700;
+          svg{
+            margin-right: 5px;
+          }
+        }
+      }
+      &.accepted{
+        >div{
+          background:  #28a745;
+        }
+      }
+    }
+    .destination_wrapper{
+      padding: 10px;
+      .desc{
+        margin-bottom: 20px;
+        margin-left: 40px;
+        h3{
+          color: rgba(0,0,0,0.8);
+        }
+        .attraction_wrapper{
+          margin-left: 20px;
+          .attr {
+            margin-top: 10px;
+            .image {
+              width: 100%;
+              height: 200px;
+              margin: 5px 0;
+              border-radius: 10px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            p{
+              margin: 10px 0;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+#header{
+  width: 100vw;
+  height: 80px;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    >a{
+      margin-right: 20px;
+      font-weight: 600;
+    }
+  }
+}
